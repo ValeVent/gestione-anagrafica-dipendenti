@@ -1,0 +1,26 @@
+<h3>Modifica Dipendente</h3>
+
+<div class="row mt-5">
+    <div class="offset-3 col-6">
+        <div class="card p-3">
+            <form #form="ngForm" (ngSubmit)="onUpdate(form)">
+            <div class="mb-3">
+                <label for="nome">Username</label>
+                <input type="text" class="form-control" id="nome" name="nome" [(ngModel)]="user.username" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="cognome">Password</label>
+                <input type="text" class="form-control" id="cognome" name="cognome" [(ngModel)]="user.password" required>
+            </div>
+
+            <div class="d-flex">
+                <button type="submit" class="btn btn-success me-2">Salva</button>
+                <button type="button" class="btn btn-secondary" (click)="onCancel()">Annulla</button>
+            </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+

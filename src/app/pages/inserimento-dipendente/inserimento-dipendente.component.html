@@ -1,0 +1,35 @@
+<div class="row mt-5">
+    <div class="offset-3 col-6">
+        <div class="card p-3">
+            <form #loginForm="ngForm" (ngSubmit)="onSave(loginForm)">
+<!--                 <div class="mb-3">
+                    <label for="id" class="form-label">Id</label>
+                    <input type="number" class="form-control" id="id" ngModel name="id" #id="ngModel" required>
+                    <div *ngIf="id?.touched && id.errors?.['required']" class="form-text">Il campo id è obbligatorio</div>
+                </div> -->
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="username" ngModel name="username" #username="ngModel" required>
+                    <div *ngIf="username?.touched && username.errors?.['required']" class="form-text">Il campo username è obbligatorio</div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" ngModel name="email" #email="ngModel" required>
+                    <div *ngIf="email?.touched && email.errors?.['required']" class="form-text">Il campo email è obbligatorio</div>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <div class="input-group">
+                        <input [type]="isShown ? 'text' : 'password'" class="form-control" id="password" ngModel name="password" #password="ngModel" required minlength="6">
+                        <span class="input-group-text pointer" (click)="onTogglePassword()"> {{ isShown ? 'hide' : 'show' }}</span>
+                    </div>
+                    <div *ngIf="password?.touched && password.errors?.['required']" class="form-text">Il campo password è obbligatorio</div>
+                    <div *ngIf="password?.touched && password.errors?.['minlength']" class="form-text">La password deve contenere almeno {{ password?.errors?.['minlength']?.['requiredLength'] }} caratteri, attualmente ne contiene {{ password?.errors?.['minlength']?.['actualLength'] }}
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary me-2" [disabled]="loginForm.invalid">Inserisci utente</button>
+                <button type="button" class="btn btn-secondary" (click)="onCancel()">Annulla</button>
+            </form>
+        </div>
+    </div>
+</div>

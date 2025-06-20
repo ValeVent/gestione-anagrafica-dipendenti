@@ -1,0 +1,28 @@
+<div class="card">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>City</th>
+                <th>Street</th>
+                <th>Number</th>
+                <th>Zipcode</th>
+                <th>Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{ user.name.firstname }}</td>
+                <td>{{ user.name.lastname }}</td>
+                <td>{{ user.address.city }}</td>
+                <td>{{ user.address.street }}</td>
+                <td>{{ user.address.number }}</td>
+                <td>{{ user.address.zipcode }}</td>
+                <td>{{ user.phone }}</td>
+                <td><button class="btn btn-danger" type="button" (click)="onDelete(user.id)">Delete</button></td>
+                <td><button class="btn btn-warning" type="button" (click)="onEdit(user.id)">Modifica</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

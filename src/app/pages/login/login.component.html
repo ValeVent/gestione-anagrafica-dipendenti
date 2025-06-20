@@ -1,0 +1,24 @@
+<div class="row mt-5">
+    <div class="offset-3 col-6">
+        <div class="card p-3">
+            <form #loginForm="ngForm" (ngSubmit)="onLogin(loginForm)">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <input type="text" placeholder="johnd" class="form-control" id="username" ngModel name="username" #username="ngModel" required>
+                    <div *ngIf="username?.touched && username.errors?.['required']" class="form-text">Il campo username è obbligatorio</div>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <div class="input-group">
+                        <input [type]="isShown ? 'text' : 'password'" placeholder="m38rmF$" class="form-control" id="password" ngModel name="password" #password="ngModel" required minlength="6">
+                        <span class="input-group-text pointer" (click)="onTogglePassword()"> {{ isShown ? 'hide' : 'show' }}</span>
+                    </div>
+                    <div *ngIf="password?.touched && password.errors?.['required']" class="form-text">Il campo password è obbligatorio</div>
+                    <div *ngIf="password?.touched && password.errors?.['minlength']" class="form-text">La password deve contenere almeno {{ password?.errors?.['minlength']?.['requiredLength'] }} caratteri, attualmente ne contiene {{ password?.errors?.['minlength']?.['actualLength'] }}
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
