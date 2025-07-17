@@ -8,45 +8,45 @@ L'applicazione "Gestione Anagrafica Dipendenti" è una Single Page Application (
 ## Credenziali di Accesso per Test
 Per accedere e testare le funzionalità di login e gestione, puoi utilizzare le seguenti credenziali (fornite da FakeStoreAPI):
 
-- Username: johnd
+- **Username**: johnd
 
-- Password: m38rmF$
+- **Password**: m38rmF$
 
 ## Tecnologie Utilizzate
-- Angular: Framework per la costruzione dell'applicazione web.
+- **Angular**: Framework per la costruzione dell'applicazione web.
 
-- TypeScript: Linguaggio di programmazione per lo sviluppo dell'applicazione.
+- **TypeScript**: Linguaggio di programmazione per lo sviluppo dell'applicazione.
 
-- HTML: Struttura dei componenti e dei template.
+- **HTML**: Struttura dei componenti e dei template.
 
-- CSS: Per lo styling dei componenti.
+- **CSS**: Per lo styling dei componenti.
 
-- Angular Router: Per la gestione della navigazione tra le diverse pagine/viste dell'applicazione.
+- **Angular Router**: Per la gestione della navigazione tra le diverse pagine/viste dell'applicazione.
 
-- Angular Forms (Template-driven forms): Per la gestione dei form di input e la validazione.
+- **Angular Forms (Template-driven forms)**: Per la gestione dei form di input e la validazione.
 
-- Angular HttpClient: Per effettuare richieste HTTP all'API esterna (fakestoreapi.com).
+- **Angular HttpClient**: Per effettuare richieste HTTP all'API esterna (fakestoreapi.com).
 
-- Bootstrap 5: Framework CSS utilizzato per il layout responsivo e lo stile dei componenti (es. btn, form-control, table, card).
+- **Bootstrap 5**: Framework CSS utilizzato per il layout responsivo e lo stile dei componenti (es. btn, form-control, table, card).
 
-- fakestoreapi.com: API RESTful pubblica utilizzata per simulare l'autenticazione e la gestione degli utenti.
+- **fakestoreapi.com**: API RESTful pubblica utilizzata per simulare l'autenticazione e la gestione degli utenti.
 
 ## Funzionalità Principali
-- Autenticazione Utente: Gli utenti devono effettuare il login con credenziali valide per accedere all'area riservata. Il token di autenticazione viene memorizzato localmente.
+- **Autenticazione Utente**: Gli utenti devono effettuare il login con credenziali valide per accedere all'area riservata. Il token di autenticazione viene memorizzato localmente.
 
-- Protezione delle Rotte: Un AuthGuard impedisce l'accesso alle pagine protette senza un token di autenticazione valido.
+- **Protezione delle Rotte**: Un AuthGuard impedisce l'accesso alle pagine protette senza un token di autenticazione valido.
 
-- Visualizzazione Lista Dipendenti: Una tabella mostra i dettagli di tutti i dipendenti recuperati dall'API.
+- **Visualizzazione Lista Dipendenti**: Una tabella mostra i dettagli di tutti i dipendenti recuperati dall'API.
 
-- Aggiunta Nuovo Dipendente: Un form dedicato permette di inserire i dati di un nuovo dipendente (username, email, password), con validazione dei campi e toggle per la visibilità della password.
+- **Aggiunta Nuovo Dipendente**: Un form dedicato permette di inserire i dati di un nuovo dipendente (username, email, password), con validazione dei campi e toggle per la visibilità della password.
 
-- Modifica Dipendente: Possibilità di aggiornare i dettagli di un dipendente esistente tramite un form pre-compilato.
+- **Modifica Dipendente**: Possibilità di aggiornare i dettagli di un dipendente esistente tramite un form pre-compilato.
 
-- Eliminazione Dipendente: Rimozione di un dipendente dalla lista con richiesta di conferma.
+- **Eliminazione Dipendente**: Rimozione di un dipendente dalla lista con richiesta di conferma.
 
-- Interazione con API Esterna: Tutte le operazioni CRUD sui dipendenti e l'autenticazione sono gestite tramite chiamate HTTP a fakestoreapi.com.
+- **Interazione con API Esterna**: Tutte le operazioni CRUD sui dipendenti e l'autenticazione sono gestite tramite chiamate HTTP a fakestoreapi.com.
 
-- Componenti Riutilizzabili: Utilizzo di componenti separati come HeaderComponent e TableComponent per una maggiore modularità.
+- **Componenti Riutilizzabili**: Utilizzo di componenti separati come HeaderComponent e TableComponent per una maggiore modularità.
 
 ## Come Avviare il Progetto
 Segui questi passaggi per configurare ed eseguire il progetto localmente:
@@ -96,11 +96,11 @@ ng serve
 Questo progetto è un'applicazione Angular completa e funzionale che dimostra l'integrazione con API RESTful esterne, l'implementazione di operazioni CRUD, la gestione dell'autenticazione e la protezione delle rotte, fornendo un esempio pratico di sviluppo di applicazioni di gestione dati.
 
 ## Contatti
-- GitHub: https://github.com/ValeVent
+- **GitHub**: https://github.com/ValeVent
 
-- LinkedIn: https://www.linkedin.com/in/valentina-venturo
+- **LinkedIn**: https://www.linkedin.com/in/valentina-venturo
 
-- Sito Web: http://www.valentinaventuro.it
+- **Sito Web**: http://www.valentinaventuro.it
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
 
